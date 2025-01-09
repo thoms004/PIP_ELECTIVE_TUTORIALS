@@ -4,6 +4,6 @@
 ### Table of Contents
 |Tutorial No. | File          | Submission Date|
 |-------------|---------------|----------------|
-|1            |[Tutorial 1]() |                |
+|1            |[Tutorial 1](1.IncomeTaxCalculator.py) |                |
 |2            |               |                |
   
