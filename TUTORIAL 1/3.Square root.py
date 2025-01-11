@@ -1,7 +1,7 @@
 """
 Calculation of square root of a number using Newton-Raphson Method
 
-The Newton-Raphson method is an iterative numerical technique to find the root of a real-valued function.
+Logic : The Newton-Raphson method is an iterative numerical technique to find the root of a real-valued function.
 For finding the square root of a number (N), we solve the equation f(x) = x^2 - N = 0.
 
 Steps of the method:
