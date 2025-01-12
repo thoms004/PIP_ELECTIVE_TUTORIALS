@@ -14,20 +14,14 @@ Steps of the method:
 
 This program implements the method with 10 fixed iterations and displays the result.
 """
-
-# Input: Accept a number from the user
 number = float(input("Enter a number: "))
 
-# Check if the input is negative
 if number < 0:
     print("Cannot calculate square root of negative numbers")
 else:
     # Initialize the guess as the input number
     x = number
-
-    # Perform 10 iterations of the Newton-Raphson method
     for _ in range(10):
         x = (x + number / x) / 2
 
-    # Output the result with 3 decimal places
     print(f"Square root of {number} is approximately {x:.3f}")
