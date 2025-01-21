@@ -6,16 +6,22 @@ Logic
 ~ Above ₹10,00,000: 30%
 """
 
-income = int(input("Enter your Income:"))
-if income <= 250000:
-    tax = 0
-    print("0% Tax")
-elif income > 250000 and income <= 500000:
-    tax = income * 0.05
-    print("5% Tax\n" + "Tax Amount:", tax)
-elif income > 500000 and income <= 1000000:
-    tax = income * 0.2
-    print("20% Tax\n" + "Tax Amount:", tax)
-elif income > 1000000:
-    tax = income * 0.3
-    print("30% Tax\n" + "Tax Amount:", tax)
+annual_income = input("Enter the annual Income ")
+annual_income = int(annual_income)
+
+if annual_income <= 250000:
+    print("no tax")
+
+elif annual_income >= 250000 and annual_income <= 500000:
+    annual_income = annual_income + annual_income * 0.05
+    percentage = '5%'
+
+elif annual_income>= 500000  and annual_income <= 1000000:
+    annual_income = annual_income +  annual_income * 0.05
+    percentage('20')
+
+elif annual_income >= 1000000:
+    annual_income = annual_income + annual_income * .20
+    percentage = '30%'
+ 
+print("The calculated Income tax is", annual_income,"and the percentage is", percentage)
